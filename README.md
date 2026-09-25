@@ -1,4 +1,4 @@
-# 🛡️ KeyGuard — Behavioral Biometrics Continuous Authentication
+# KeyGuard — Behavioral Biometrics Continuous Authentication
 
 KeyGuard is a lightweight CLI tool and background security daemon for **Windows 10/11** that continuously monitors your typing rhythm to detect unauthorized access on unlocked laptops.
 
@@ -11,12 +11,12 @@ It learns *how* you type — not *what* you type — and challenges anyone whose
 ```
 You type normally → KeyGuard silently monitors in the background
                           ↓
-              Typing rhythm matches yours? → ✅ Nothing happens
+              Typing rhythm matches yours? → Nothing happens
                           ↓
-              Rhythm looks different? → ⚠️ Challenge modal appears
+              Rhythm looks different? → Challenge modal appears
                           ↓
               Correct passphrase → Resume monitoring
-              Wrong passphrase / Alt+Tab → 🔒 Laptop locks instantly
+              Wrong passphrase / Alt+Tab → Laptop locks instantly
 ```
 
 ### Metrics Captured
@@ -116,7 +116,7 @@ keyguard/
 
 ## Security Notes
 
-- ⚠️ KeyGuard does **not** log what you type — only the timing between keystrokes
+- KeyGuard does **not** log what you type — only the timing between keystrokes
 - Your passphrase is stored as a **bcrypt hash** in `%APPDATA%/KeyGuard/config.json`
 - The trained model and dataset are stored locally in `%APPDATA%/KeyGuard/`
 - KeyGuard **cannot** monitor the Windows Lock Screen (Secure Desktop blocks all user-level hooks)
